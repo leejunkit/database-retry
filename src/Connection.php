@@ -18,7 +18,8 @@ class Connection extends IlluminateConnection
         return str_contains($message, [
             'server has gone away',
             'no connection to the server',
-            'Lost connection'
+            'Lost connection',
+            'getaddrinfo failed'
         ]);
     }
 }
